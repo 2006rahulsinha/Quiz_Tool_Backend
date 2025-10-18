@@ -20,7 +20,7 @@ app = FastAPI()
 app.add_middleware(
 CORSMiddleware,
 allow_origins=[
-"https://quiz-app-your-project.vercel.app",
+"https://quiz-tool-gules.vercel.app/",
 "http://localhost:3000"
 ],
 allow_credentials=True,
