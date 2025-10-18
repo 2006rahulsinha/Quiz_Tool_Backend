@@ -18,11 +18,14 @@ app = FastAPI()
 
 # --- Configure CORS ---
 app.add_middleware(
-    CORSMiddleware,
-    allow_origins=[FRONTEND_ORIGIN],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+CORSMiddleware,
+allow_origins=[
+"https://quiz-app-your-project.vercel.app",
+"http://localhost:3000"
+],
+allow_credentials=True,
+allow_methods=["*"],
+allow_headers=["*"],
 )
 
 # --- Configure Gemini ---
